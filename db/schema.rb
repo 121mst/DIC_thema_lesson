@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170513071606) do
   end
 
   create_table "users", force: :cascade do |t|
+    
     t.string   "email",                  default: "",      null: false
     t.string   "encrypted_password",     default: "",      null: false
     t.string   "name",                   default: "(未設定)", null: false
